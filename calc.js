@@ -1,26 +1,18 @@
-function insert(num)
-{
-    var numero = document.getElementById('resultado').innerHTML;
-    document.getElementById('resultado').innerHTML = numero + num;
+var resultado = document.getElementById('resultado');
+
+function insert(num) {
+    var numero = resultado.value;
+    resultado.value = numero + num;
 }
-function clean()
-{
-    document.getElementById('resultado').innerHTML = "";
+
+function clean() {
+    resultado.value = "";
 }
-function back()
-{
-    var resultado = document.getElementById('resultado').innerHTML;
-    document.getElementById('resultado').innerHTML = resultado.substring(0, resultado.length -1);
+
+function back() {
+    resultado.value = resultado.value.substring(0, resultado.value.length - 1);
 }
-function calcular()
-{
-    var resultado = document.getElementById('resultado').innerHTML;
-    if(resultado)
-    {
-        document.getElementById('resultado').innerHTML = eval(resultado);
-    }
-    else
-    {
-        document.getElementById('resultado').innerHTML = "Nada..."
-    }
+
+function calcular() {
+    resultado.value = eval(resultado.value) || 0;
 }
