@@ -15,10 +15,5 @@ function back() {
 }
 
 function calcular() {
-    var resultado = resultado.innerHTML;
-    if (resultado) {
-        resultado.innerHTML = eval(resultado);
-    } else {
-        resultado.innerHTML = "Nada..."
-    }
+    resultado.innerHTML = eval(resultado.innerHTML) || 0;
 }
