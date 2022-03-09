@@ -14,8 +14,8 @@
         <h2>CALCULADORA</h2>
         <p id="resultado"></p>
 
-        <button onclick="clean()">C</button>
-        <button onclick="back()"><</button>
+        <button id="clean-result" onclick="clean()">C</button>
+        <button id="back" onclick="back()"><</button>
         <button onclick="insert('/')">/</button>
         <button onclick="insert('*')">X</button>
 
@@ -32,9 +32,9 @@
         <button onclick="insert('1')">1</button>
         <button onclick="insert('2')">2</button>
         <button onclick="insert('3')">3</button>
-        <button onclick="calcular()">=</button>
+        <button id="calcular" onclick="calcular()">=</button>
 
-        <button onclick="insert('0')">0</button>
+        <button id="zero" onclick="insert('0')">0</button>
         <button onclick="insert('.')">.</button>
     </div>
 </body>
