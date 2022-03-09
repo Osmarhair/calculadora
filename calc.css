@@ -69,4 +69,5 @@ button:hover{
     color: rgb(10, 4, 4);
     text-align: right;
     padding: 5px;
+    border: 0;
 }

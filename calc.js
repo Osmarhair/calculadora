@@ -1,19 +1,18 @@
 var resultado = document.getElementById('resultado');
 
 function insert(num) {
-    var numero = resultado.innerHTML;
-    resultado.innerHTML = numero + num;
+    var numero = resultado.value;
+    resultado.value = numero + num;
 }
 
 function clean() {
-    resultado.innerHTML = "";
+    resultado.value = "";
 }
 
 function back() {
-    var resultado = resultado.innerHTML;
-    resultado.innerHTML = resultado.substring(0, resultado.length - 1);
+    resultado.value = resultado.value.substring(0, resultado.value.length - 1);
 }
 
 function calcular() {
-    resultado.innerHTML = eval(resultado.innerHTML) || 0;
+    resultado.value = eval(resultado.value) || 0;
 }
